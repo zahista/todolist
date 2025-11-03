@@ -5,11 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    @vite('resources/css/app.css')
 </head>
-<body>
-    
-
-<h1>Ahoj jsem welcome view</h1>
-
+<body class="bg-blue-100">
+    <h1>Ahoj jak {{ $cert->title }}</h1>
 </body>
 </html>
