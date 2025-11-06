@@ -9,6 +9,15 @@ class DashboardController extends Controller
     public function index()
     {
         $cert = Certificate::first();
-        return view('dashboard', compact('cert'));
+        $array = [
+            "Tomáš",
+            "Martin",
+            "Evženie"
+        ];
+
+
+    
+
+        return view('dashboard',["cert" => $cert, "array" => $array]);
     }
 }

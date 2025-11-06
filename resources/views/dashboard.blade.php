@@ -1,13 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    @vite('resources/css/app.css')
-</head>
-<body class="bg-blue-100">
-    <h1>Ahoj jak {{ $cert->title }}</h1>
-</body>
-</html>
+<x-layouts.app>
+    <x-navbar />
+    <h1>Ahoj jak se máš? </h1>
+    <x-my-button>Klikni na mě</x-my-button>
+</x-layouts.app>

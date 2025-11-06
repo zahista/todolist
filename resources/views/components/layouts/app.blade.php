@@ -7,9 +7,10 @@
     <title>Document</title>
     @vite('resources/css/app.css')
 </head>
-<body>
-
-    {{ $slot }}
-
+<body class="bg-zinc-100">
+    <main class="container mx-auto bg-white p-16 rounded-xl mt-16">
+        {{ $slot }}
+    </main>
 </body>
 </html>
+
