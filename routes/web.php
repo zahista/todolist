@@ -4,4 +4,4 @@ use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', [DashboardController::class, 'index']);
-Route::post('/', [DashboardController::class, 'create']);
+Route::get('/restaurant/{restaurant}', [DashboardController::class, 'show']);
