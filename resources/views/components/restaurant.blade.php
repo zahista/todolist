@@ -1,7 +1,7 @@
 @props(['restaurant'])
 
 <div class="border border-gray-100 shadow rounded-lg overflow-hidden">
-    <img src="{{ asset($restaurant->image_path) }}" alt="">
+    <img class="w-full h-32 bg-sky-50" src="{{ asset($restaurant->image_path) }}" alt="">
 
     <main class="flex justify-between p-2">
         <div class="">

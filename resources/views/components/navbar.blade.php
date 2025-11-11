@@ -1,4 +1,4 @@
-<nav class="border-b border-gray-200 w-full p-4 py-6">
+<nav class="border-b border-gray-200 w-full p-4 py-6 sticky isolate z-50 top-0 bg-white">
     <div class="container mx-auto flex justify-between items-center">
 
         <div id="leva" class="flex items-center gap-6">

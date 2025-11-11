@@ -15,6 +15,16 @@ class DashboardController extends Controller
 
     public function show(Restaurant $restaurant)
     {
-        return view('show', ['restaurant' => $restaurant]);
+
+        $categories = $restaurant->offers->pluck('category')->unique();
+        $offers = $restaurant->offers->groupBy('category');
+
+        
+        return view('show', 
+        [
+            'restaurant' => $restaurant, 
+            'categories' => $categories, 
+            'offers' => $offers
+        ]);
     }
 }
