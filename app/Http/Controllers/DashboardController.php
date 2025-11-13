@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Offer;
 use App\Models\Restaurant;
+use Illuminate\Http\Request;
 
 class DashboardController extends Controller
 {

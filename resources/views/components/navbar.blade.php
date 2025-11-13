@@ -38,8 +38,14 @@
         </div>
 
         <div id="prava">
+            @auth
+            <p>Přihlášen jako {{auth()->user()->name}}</p>
+            @endauth
+
+            @guest
             <a href="" class="text-sm mr-4">Přihlásit</a>
             <a href="" class="bg-sky-100 text-sky-500 p-4 rounded-lg hover:bg-sky-200">Registrace</a>
+            @endguest
         </div>
     </div>
 </nav>
